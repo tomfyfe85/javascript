@@ -1,4 +1,4 @@
- const fizzBuzz = require('../fizzbuzz')
+ const fizzBuzz = require('../program/fizzbuzz')
 
 describe('fizzBuzz',() => {
   it('fizzBuzz if no is divisible by 3 & 5', 
@@ -6,14 +6,14 @@ describe('fizzBuzz',() => {
     expect(fizzBuzz(15)).toBe('fizzbuzz')
   });
   
-  it('fizz if no is divisible by 3', 
-  () => {
-    expect(fizzBuzz(3)).toBe('fizz');
-  });
- 
   it('buzz if no is divisible by 5',
   () => {
     expect(fizzBuzz(5)).toBe('buzz')
+  });
+
+  it('fizz if no is divisible by 3', 
+  () => {
+    expect(fizzBuzz(3)).toBe('fizz');
   });
 
   it('8 if given number is 8',
